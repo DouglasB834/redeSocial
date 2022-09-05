@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site de rede social Entrega s6 19">
+        <link rel="shortcut icon" href="src/assets/doug.ico" type="image/x-icon">
+        <!-- Link google Ftons  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Tost css -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+        <!-- tost JS -->
+        <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+        <!-- Axios  -->
+        <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!--  icons  -->
+        <script src="https://kit.fontawesome.com/f39f42120f.js" crossorigin="anonymous"></script>
+        <!-- Link config Java Script -->
+        <script type="module" defer src="../scripts/dashboard.js"></script>
+
+        <!-- <script defer  type="module" src="../scripts/modalDashboard.js"></script> -->
+
+        <!-- link Config CSS -->
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/component.css">
+        <link rel="stylesheet" href="../styles/dashboard.css">
+        <link rel="stylesheet" href="../styles/modalDashboard.css">
+        <title>Rede Social</title>
+    </head>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+
+            <div class="cabecalho__container-logo">
+                <img src="../assets/TechPosters.png" alt="logo TechPosters">
+            </div>
+            <button class="btns_singUp sair">Sair</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="sections_postar">
+            <!-- container post -->
+            <div class="sections__container__post">
+
+                <div class="containe_info">
+                    <div class="container__div_img">
+                        <img id="minhaFoto" src="../assets/doug.ico" alt="">
+                    </div>
+                    <div class="containe_info_usuario">
+                        <h2 class="title">Samuel </h2>
+                        <p class="jobs">Front-end Enginner</p>
+
+                    </div>
+                    <div class="seguidores"><span id="seguidores">565 seguidores</span></div>
+
+                </div>
+
+
+                <div class="container__postar-post">
+
+                    <form class="form">
+                        <input class="form__post" type="text" placeholder="Digite seu Titulo do post"
+                            required="requered">
+                        <textarea class="form__text" name="post" id="" cols="30" rows="10"
+                            placeholder=" Digite descrição do post"></textarea>
+                        <div>
+                            <button class="btnPostar" type="submit">Postar</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- sugestão  -->
+            <div class="container__sugestões">
+
+                <h3>Sugestões para você seguir</h3>
+                <ul class="ul_sujestoes">
+
+                    <li>
+                        <div class="li_div_usuarios">
+                            <div class="box_img">
+                                <img src="../assets/doug.ico" alt="">
+                            </div>
+                            <div class="box_content_usuario">
+                                <p class="nomeUsuario">Larrissa</p>
+                                <span class="trabalhoUsuario">Trabalho</span>
+                            </div>
+                        </div>
+                        <!-- <input type="checkbox"> -->
+                        <div class="box_btnSeguir">
+                            <button type="submit" class="seguir">Seguindo</button>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- Postagens  -->
+        <section class="container__postagens">
+
+            <h2>Posts</h2>
+
+            <ul class="postagens_ul">
+                <!-- <li>
+                    <div class="li_div_usuarios">
+
+                        <div class="box_imgDiv__postagem">
+                            <img class="imgUsers" src="../assets/doug.ico" alt="">
+                        </div>
+
+                        <div class="posts__Info__usuario">
+                            <h3 class="nome_usuario_h3">Samuel persuhn</h3>
+                            <p class="trabalho">trabalho</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="informacao__do__post">
+                        <h2>Como criar um interface simples e agradável utilizando boas práticas de desig</h2>
+                        <p>Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto
+                            feito por um profissional de UI design! Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Asperiores molestiae iure molestias quod consequatur quis cumque reprehenderit?
+                            Dolores suscipit corporis maxime vero pariatur laboriosam dolore illo, repellendus qui ipsa
+                            facilis? </p>
+                    </div>
+
+                    <div class="box_brnAbrirPost">
+                        <button class="btnAbrirPost">Abrir Post</button>
+
+                        <div class="box__curtidas">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="contadorCurtidas">25</span>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="li_div_usuarios">
+                        <div class="box_imgDiv__postagem">
+                            <img class="imgUsers" src="../assets/doug.ico 1.png" alt="">
+                        </div>
+
+                        <div class="posts__Info__usuario">
+                            <h3 class="nome_usuario_h3">Samuel persuhn</h3>
+                            <p class="trabalho">trabalho</p>
+                        </div>
+
+                    </div>
+
+                    <div class="informacao__do__post">
+                        <h2>Como criar um interface simples e agradável utilizando boas práticas de desig</h2>
+                        <p>Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto
+                            feito por um profissional de UI design! Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Asperiores molestiae iure molestias quod consequatur quis cumque reprehenderit?
+                            Dolores suscipit corporis maxime vero pariatur laboriosam dolore illo, repellendus qui ipsa
+                            facilis? </p>
+                    </div>
+                    <div class="box_brnAbrirPost">
+                        <div></div>
+                        <button class="btnAbrirPost">Abrir Post</button>
+
+                        <div class="box__curtidas">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="contadorCurtidas">25</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="li_div_usuarios">
+                        <div class="box_imgDiv__postagem">
+                            <img  src="../assets/doug.ico" alt="">
+                        </div>
+
+                        <div class="posts__Info__usuario">
+                            <h3 class="nome_usuario_h3">Samuel persuhn</h3>
+                            <p class="trabalho">trabalho</p>
+                        </div>
+
+                    </div>
+
+
+                  
+                    <div class="informacao__do__post">
+                        <h2>Como criar um interface simples e agradável utilizando boas práticas de desig</h2>
+                        <p>Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto
+                            feito por um profissional de UI design! Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Asperiores molestiae iure molestias quod consequatur quis cumque reprehenderit?
+                            Dolores suscipit corporis maxime vero pariatur laboriosam dolore illo, repellendus qui ipsa
+                            facilis? </p>
+                    </div>
+                    <div class="box_brnAbrirPost">
+                        <button class="btnAbrirPost">Abrir Post</button>
+
+                        <div class="box__curtidas">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="contadorCurtidas">25</span>
+                        </div>
+                    </div>
+                </li> -->
+
+            </ul>
+
+        </section>
+
+        <footer class="footer">
+            <button class="btn1">⏪</button><span class="page">1</span><button class="btn2">⏩</button>
+        </footer>
+
+    </main>
+
+    <!-- modal -->
+    <!-- <section class="container__modal">
+        <div class="modal">
+            <div class="li_div_usuarios">
+                
+                <div class="box_imgDiv__postagem">
+                    <img src="../assets/Ellipse 1.png" alt="">
+                </div>
+                
+                <div class="posts__Info__usuario">
+                    <h3 class="nome_usuario_h3">Samuel persuhn</h3>
+                    <p class="trabalho">trabalho</p>
+                </div>
+                <span class="fechaModal">X</span>
+                
+            </div>
+
+            <div class="informacao__do__post">
+                <h2 class="tituloPost">
+                    Como criar um interface simples e agradável utilizando boas práticas de desig
+                </h2>
+                <p class="textPost">
+                    Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto
+                    feito por um profissional de UI design! Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Asperiores molestiae iure molestias quod consequatur quis cumque reprehenderit?
+                    Dolores suscipit corporis maxime vero pariatur laboriosam dolore illo, repellendus qui ipsa
+                    facilis?
+                 </p>
+            </div>
+
+        </div>
+
+    </section> -->
+
+</body>
+
+</html>

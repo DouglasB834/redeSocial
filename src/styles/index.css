@@ -1,0 +1,120 @@
+body {}
+
+.cabecalho {
+    width: 100%;
+    background-color: var(--grey1);
+    height: 75px;
+
+}
+
+.cabecalho__container {   
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.cabecalho>.cabecalho__container-logo {}
+
+.cabecalho>.cabecalho__container-logo>img {}
+
+.cabecalho__btns>.cabecalho_btns_login,
+.cabecalho_btns_singUp {
+    width: 53px;
+    height: 32px;
+    background-color: var(--grey2);
+    color: var(--whiteFixed);
+    border-radius: 5px;
+    font-size: var(--text2);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.cabecalho_btns_singUp {
+    width: 71px;
+    height: 32px;
+    background-color: var(--grey1);
+    border: none;
+    color: var(--whiteFixed);
+}
+
+
+
+
+.darkMode {
+    display: flex;
+    width: 50px;
+    height: 26px;
+    padding: 5px;
+    border-radius: 1rem;
+    position: relative;
+    align-items: center;
+    background-color: var(--grey3);
+    justify-content: space-between;
+    transform: scale(1);
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    height: 350px;
+    border-radius: 5px;
+    display: flex;
+    background-color: var(--grey4);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 1rem;
+
+
+}
+
+.container>h1 {
+    /* mudar para 6rem */
+    font-size: 4rem;
+    text-align: center;
+    color: var(--grey1);
+    border-bottom: 1px solid;
+}
+
+.container>p {
+    width: 80%;
+    text-align: center;
+}
+
+.container>.box__btns {}
+
+.container>.box__btns>.main__btn {
+    padding: .6rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--grey1);
+    color: var(--whiteFixed);
+    margin-bottom: 1rem;
+    border: none;
+
+}
+
+.container>.box__btns>.main__btn_variavel {
+    background: var(--grey2);
+}
+
+.container>.box__btns>.main__btn:hover {
+    background-color: var(--grey2);
+}
+
+.container>.box__btns>.main__btn_cadastra:hover {
+    background-color: var(--grey3);
+}
+
+
+
+

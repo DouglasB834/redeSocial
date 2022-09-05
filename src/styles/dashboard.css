@@ -1,0 +1,375 @@
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    width: 100%;
+    background-color: var(--grey1);
+    height: 75px;
+    margin-bottom: 2.5rem;
+    position: fixed;
+    z-index: 2;
+
+}
+
+.cabecalho__container {
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.cabecalho__container .btns_singUp {
+    width: 71px;
+    height: 32px;
+    background-color: var(--grey1);
+    border: none;
+    color: var(--whiteFixed);
+}
+
+
+.sections_postar {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 1rem;
+
+}
+
+.sections__container__post {}
+
+.sections__container__post>.containe_info {
+    display: flex;
+    margin: 5.5rem 0 3rem 1.2rem;
+    align-content: center;
+
+
+
+}
+
+.sections__container__post>.containe_info {}
+
+.sections__container__post>.containe_info>.container__div_img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: solid 1px var(--grey1);
+}
+
+.sections__container__post>.containe_info>.container__div_img img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+.containe_info>.containe_info_usuario {
+    margin-left: 10px;
+    margin-top: 9px;
+}
+
+.seguidores {
+    margin-top: 9px;
+}
+
+.containe_info>.containe_info_usuario>.title {
+    font-size: var(--title2);
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#seguidores {
+    font-size: var(--text2);
+    font-weight: 400;
+    margin-left: 10px;
+    transform: translateY(-50px);
+}
+
+.containe_info>.containe_info_usuario>p {
+    font-size: var(--text2);
+
+}
+
+.containe_info>.containe_info_usuario .trabalho_usuario {}
+
+
+/* Stilo poster */
+.container__postar-post {
+    display: flex;
+    margin: 0 auto;
+    /* max-width: 713px;  */
+    justify-content: center;
+}
+
+.container__postar-post .form {
+    /* border: 1px solid var(--grey3); */
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+    border-radius: .5px;
+}
+
+.container__postar-post>form>.form__post {
+    max-width: 100%;
+    ;
+    padding: 1rem;
+    border: 1px solid var(--grey3);
+    border-radius: 5px;
+}
+
+.container__postar-post>form>.form__text {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.container__postar-post>form>div {
+    display: flex;
+    justify-content: flex-end
+}
+
+.container__postar-post form>div>button {
+    padding: .5rem;
+    color: var(--grey3);
+    border: 1px solid var(--grey4)
+}
+
+/* Sugestão para seguir */
+
+.container__sugestões {
+    margin: 3rem auto;
+    width: 90%;
+}
+
+.box_content {
+    display: flex;
+}
+
+.container__sugestões>h3 {
+    transform: translateY(-30px);
+}
+
+.ul_sujestoes {
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    /* -webkit-mask-image: linear-gradient(to right, rgb(0, 0, 0) 1%, transparent); */
+}
+
+.ul_sujestoes li {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+
+
+}
+
+.li_div_usuarios {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.li_div_usuarios>.box_img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid var(--grey1);
+
+}
+
+.li_div_usuarios>.box_img>img {
+    width: 100%;
+}
+
+.box_content_usuario {
+    margin-left: 9px;
+}
+
+.box_content_usuario>p {
+    font-size: var(--title2);
+    font-weight: 600;
+    line-height: 24px;
+
+}
+
+.box_content_usuario>span {
+    font-size: var(--text2);
+}
+
+.box_btnSeguir {}
+
+.box_btnSeguir button {
+    background-color: var(--whiteFixed);
+    border: 1px solid var(--grey4);
+    padding: .3rem;
+    color: var(--grey2);
+}
+
+/*============ Stilo dos poste ======== */
+
+.container__postagens {
+    width: 90%;
+    margin: 0;
+}
+
+.container__postagens>h2 {
+    transform: translateY(-30px);
+}
+
+.postagens_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.postagens_ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+}
+
+.box_imgDiv__postagem {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid var(--grey1);
+}
+
+.box_imgDiv__postagem .imgUsers {
+    width: 100%;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.imgUsers {
+    width: 100%;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+.posts__Info__usuario {
+    margin-left: 1rem;
+}
+
+.posts__Info__usuario h3 {
+    /* margin-bottom: 5px; */
+    max-width: 100%
+}
+
+.posts__Info__usuario p {}
+
+
+
+
+.box_brnAbrirPost {
+    width: 60%;
+    /* height: 38px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btnAbrirPost {
+    background-color: var(--grey1);
+    border: 1px solid var(--grey3);
+    color: var(--whiteFixed);
+    padding: .5rem;
+    font-size: var(--text2);
+}
+
+.box__curtidas {
+    display: flex;
+    height: 20px;
+    gap: 5px;
+    margin-left: 2rem;
+}
+
+/* .box__curtidas i {} */
+
+.box__curtidas span {
+    width: 20px;
+}
+
+.informacao__do__post {
+    height: auto;
+    max-width: 100%;
+}
+
+.informacao__do__post h2 {
+
+    font-weight: 700;
+    font-size: var(--text1);
+    line-height: 40px;
+    margin-bottom: 5px;
+
+}
+
+.informacao__do__post p {
+    /* overflow: hidden;
+    height: 90px; */
+}
+
+
+
+@media (min-width:902px) {
+
+    .container__postagens {
+        max-width: 713px;
+        width: 731px;
+        justify-content: flex-start;
+    }
+
+    .container__postar-post {
+        max-width: 713px;
+        width: 731px;
+        justify-content: flex-start;
+    }
+
+    .form {
+        max-width: 731px;
+    }
+
+    .sections__container__post {
+        max-width: 89%;
+    }
+
+    .sections_postar {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        gap: 1rem;
+        height: 600px;
+    }
+
+    .ul_sujestoes {
+        margin-top: 1rem;
+        position: sticky;
+        width: 100%;
+        display: flex;
+        overflow: scroll;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        -webkit-mask-image: linear-gradient(to right, rgb(0, 0, 0) 1%, transparent);
+        flex-direction: column;
+    }
+
+}
